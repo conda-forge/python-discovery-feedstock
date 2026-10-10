@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "1.6.1"
+  version: 1.6.2
 
 package:
   name: python-discovery
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/p/python-discovery/python_discovery-${{ version }}.tar.gz
-  sha256: cf87d3627dfb4412437fdd5b13eae402607722998d21567993aedbc59b23c15e
+  sha256: cd1738ca1d37c86ef9d0b654dd46fcee1e41c97c6add12575e8501ced39afdb4
 
 build:
   number: 0
@@ -24,7 +24,7 @@ requirements:
     - pip
   run:
     - python >=${{ python_min }}
-    - filelock >=3.15.4
+    - filelock >=3.16.1
 tests:
   - python:
       imports:
