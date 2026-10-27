@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "1.6.4"
+  version: "1.6.5"
 
 package:
   name: python-discovery
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/p/python-discovery/python_discovery-${{ version }}.tar.gz
-  sha256: bc70d31f0ec5de11eda13d4d64c16e24b3506a65984684f2b6c98cb83b2ea9df
+  sha256: f9420b2107a429ec9912bd10039135fc9bb8f15e99a00e614533977529f56bb3
 
 build:
   number: 0
@@ -19,6 +19,7 @@ build:
 requirements:
   host:
     - python ${{ python_min }}.*
+    - hatch-fancy-pypi-readme >=25.1
     - hatch-vcs >=0.5
     - hatchling >=1.28
     - pip
