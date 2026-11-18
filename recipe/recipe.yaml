@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "1.9.5"
+  version: "1.9.6"
 
 package:
   name: python-discovery
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/p/python-discovery/python_discovery-${{ version }}.tar.gz
-  sha256: 86279f5d2728bc067de28b7ddc571be2eacc2ae0e7048f8629d2481a0f8848a2
+  sha256: 383aa67858d73a9585a843a37a4383c6be98e4d86a981a031328e393a6eb2632
 
 build:
   number: 0
@@ -21,7 +21,9 @@ requirements:
     - python ${{ python_min }}.*
     - hatch-fancy-pypi-readme >=25.1
     - hatch-vcs >=0.5
+    # python-sbom[hatch]
     - hatchling >=1.28
+    - python-sbom
     - pip
   run:
     - python >=${{ python_min }}
