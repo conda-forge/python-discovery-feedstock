@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "1.9.6"
+  version: "1.9.7"
 
 package:
   name: python-discovery
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/p/python-discovery/python_discovery-${{ version }}.tar.gz
-  sha256: 383aa67858d73a9585a843a37a4383c6be98e4d86a981a031328e393a6eb2632
+  sha256: cea89e8a8b86e19731c67f8393f34eb1a2f96c9f97f3e406929a99c646a2358d
 
 build:
   number: 0
